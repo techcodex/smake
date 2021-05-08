@@ -77,7 +77,7 @@ class BankApiTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $this->delete(route('api.bank.delete',$bank->id))
+        $this->delete(route('api.bank.delete', $bank->id))
                 ->assertStatus(200);
     }
 
@@ -92,7 +92,7 @@ class BankApiTest extends TestCase
 
         $bank->transactions()->save($transactions);
 
-        $this->get(route('api.bank.getTransactionTotal',$bank->id))
+        $this->get(route('api.bank.getTransactionTotal', $bank->id))
             ->assertStatus(200);
     }
 }

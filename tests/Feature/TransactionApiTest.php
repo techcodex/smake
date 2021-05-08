@@ -40,7 +40,7 @@ class TransactionApiTest extends TestCase
             'date' => '08.05.2021'
         ];
 
-        $this->json('POST',route('api.transaction.store'),$form_data)
+        $this->json('POST', route('api.transaction.store'), $form_data)
                 ->assertStatus(200);
     }
 
@@ -65,7 +65,7 @@ class TransactionApiTest extends TestCase
         $transaction = factory(Transaction::class)->make();
         $this->bank->transactions()->save($transaction);
 
-        $this->delete(route('api.transaction.delete',$transaction->id))
+        $this->delete(route('api.transaction.delete', $transaction->id))
                 ->assertStatus(200);
     }
 
@@ -86,7 +86,7 @@ class TransactionApiTest extends TestCase
             'description' => 'Update Test'
         ];
 
-        $this->json('PUT',route('api.transaction.update',$transaction->id),$form_data)
+        $this->json('PUT', route('api.transaction.update', $transaction->id), $form_data)
                 ->assertStatus(200);
     }
 }

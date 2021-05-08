@@ -27,7 +27,7 @@ class UserApiTest extends TestCase
 
         $this->withExceptionHandling();
 
-        $this->json('POST',route('api.register'),$form_data)
+        $this->json('POST', route('api.register'), $form_data)
                 ->assertStatus(200);
     }
 
@@ -40,7 +40,7 @@ class UserApiTest extends TestCase
             'email' => 'sohaib@yahoo.com',
             'password' => 'password'
         ];
-        $this->json('POST',route('api.login'),$form_data)
+        $this->json('POST', route('api.login'), $form_data)
                 ->assertStatus(200);
     }
 

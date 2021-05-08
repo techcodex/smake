@@ -15,7 +15,6 @@ class TransactionRepository
     public static function store($data)
     {
         extract($data);
-        
         try {
             // finding Bank
             $bank = BankRepository::find($bank_id);

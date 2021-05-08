@@ -109,14 +109,14 @@ class BankRepository
 
             //getting Bank Total Transaction Amount 
             $total = DB::table('banks AS b')
-                ->select(DB::raw('SUM(t.amount) as transaction_sum'))
-                ->join('transactions AS t','t.bank_id','b.id')
-                ->where([
-                    ['b.deleted_at', null],
-                    ['t.deleted_at', null],
-                    ['t.bank_id', $bank->id]
-                ])
-                ->get()->first();
+                        ->select(DB::raw('SUM(t.amount) as transaction_sum'))
+                        ->join('transactions AS t','t.bank_id','b.id')
+                        ->where([
+                            ['b.deleted_at', null],
+                            ['t.deleted_at', null],
+                            ['t.bank_id', $bank->id]
+                        ])
+                        ->get()->first();
 
             return $total->transaction_sum == null ? 0 : $total->transaction_sum;
         } catch (Exception $ex) {

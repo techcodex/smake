@@ -17,20 +17,20 @@ class UserRepository
         extract($data);
         $response = [];
 
-        // creating New User
+        // Creating New User
         $user = User::create([
             'name' => $name,
             'email' => $email,
             'password' => Hash::make($password),
         ]);
 
-        // creating Access token
+        // Creating Access token
         $access_token = $user->createToken('authToken')->accessToken;
 
-        // getting formatted User Data
+        // Getting formatted User Data
         $user_data = self::getFormattedUser($user);
         
-        // returning response data
+        // Returning response data
         $response['status'] = config('status.OK');
         $response['message'] = "";
         $response['result']['user'] = $user_data;
@@ -62,7 +62,7 @@ class UserRepository
         
         $response = [];
         
-        // checking User Credentails
+        // Checking User Credentails
         if (!auth()->attempt(['email'=>$email,'password'=>$password])) { 
             throw new Exception("Invalid Credentails");
         }
@@ -70,13 +70,13 @@ class UserRepository
         // creating Access Token
         $access_token = auth()->user()->createToken('authToken')->accessToken;
 
-        // getting Auth User
+        // Getting Auth User
         $user = Auth::user();
         
-        // getting formatted User Data
+        // Getting formatted User Data
         $user_data = self::getFormattedUser($user);
 
-        // returning response data
+        // Returning response data
         $response['status'] = config('status.OK');
         $response['message'] = "";
         $response['result']['user'] = $user_data;
