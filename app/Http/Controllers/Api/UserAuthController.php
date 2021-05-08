@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UserLoginRequest;
 use App\Http\Requests\UserRegisterRequest;
 use App\Repository\Users\UserRepository;
 use Exception;
@@ -38,7 +39,7 @@ class UserAuthController extends Controller
      * 
      * @return json response
      */
-    public function login(Request $request)
+    public function login(UserLoginRequest $request)
     {
         $response = [];
         try {

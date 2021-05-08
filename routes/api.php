@@ -19,8 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 //User Auth Routes
-Route::post('/user/resgiter','Api\UserAuthController@register');
-Route::post('/user/login','Api\UserAuthController@login');
+Route::post('/user/resgiter','Api\UserAuthController@register')->name('api.register');
+Route::post('/user/login','Api\UserAuthController@login')->name('api.login');
 
 Route::middleware('auth:api-user')->group(function() {
     //Banks Routes
