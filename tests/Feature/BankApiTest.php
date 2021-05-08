@@ -9,14 +9,12 @@ use Tests\TestCase;
 class BankApiTest extends TestCase
 {
     /**
-     * A basic feature test example.
+     * Banks List Api Test
      *
      * @return void
      */
-    public function testExample()
+    public function testCanShowListOfBanks()
     {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
+        
     }
 }

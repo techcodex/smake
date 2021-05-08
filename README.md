@@ -9,6 +9,7 @@ terminal into your project folder and run these Commands
 3. **composer dump-autoload**
 4. Open localhost/phpmyadmin
 5. Create new Database With any name you want.
+6. Now Run this Command **php artisan passport:install --force**
 
 
 ## Setting Project Configurations
