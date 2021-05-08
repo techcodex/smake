@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TransactionStoreRequest;
+use App\Http\Requests\TransactionUpdateRequest;
 use App\Repository\Transactions\TransactionRepository;
 use Exception;
 use Illuminate\Http\Request;
@@ -93,7 +94,7 @@ class TransactionsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(TransactionUpdateRequest $request, $id)
     {
         try {
             $data = $request->all();
