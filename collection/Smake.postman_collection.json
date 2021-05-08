@@ -21,7 +21,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"sohaib\",\r\n    \"email\":\"sohaib3@yahoo.com\",\r\n    \"password\":\"password\",\r\n    \"password_confirmation\":\"password\"\r\n}",
+							"raw": "{\r\n    \"name\":\"sohaib\",\r\n    \"email\":\"sohaib@yahoo.com\",\r\n    \"password\":\"password\",\r\n    \"password_confirmation\":\"password\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -99,7 +99,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"J\"\r\n}",
+							"raw": "{\r\n    \"name\":\"MCBT\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -137,7 +137,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"JS\"\r\n}",
+							"raw": "{\r\n    \"name\":\"JSB\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -145,14 +145,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_url}}/api/banks/2",
+							"raw": "{{local_url}}/api/banks/1",
 							"host": [
 								"{{local_url}}"
 							],
 							"path": [
 								"api",
 								"banks",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -243,7 +243,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{local_url}}/api/banks/get_transaction_sum/1",
+							"raw": "{{local_url}}/api/banks/get_transaction_sum/2",
 							"host": [
 								"{{local_url}}"
 							],
@@ -251,7 +251,7 @@
 								"api",
 								"banks",
 								"get_transaction_sum",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -280,7 +280,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"bank_id\":1,\r\n    \"amount\":15.30,\r\n    \"description\":\"Bank Transfer\",\r\n    \"date\":\"05.08.2021\"\r\n}",
+							"raw": "{\r\n    \"bank_id\":2,\r\n    \"amount\":15.15,\r\n    \"description\":\"Bank Transfer\",\r\n    \"date\":\"05.08.2021\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -326,14 +326,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_url}}/api/transactions/3",
+							"raw": "{{local_url}}/api/transactions/2",
 							"host": [
 								"{{local_url}}"
 							],
 							"path": [
 								"api",
 								"transactions",
-								"3"
+								"2"
 							]
 						}
 					},
@@ -357,7 +357,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"date\":\"06.05.2021\",\r\n    \"amount\":100.00,\r\n    \"description\":\"Updated Transaction\",\r\n    \"bank_id\":1\r\n}",
+							"raw": "{\r\n    \"date\":\"06.05.2021\",\r\n    \"amount\":105,\r\n    \"description\":\"Updated Transaction\",\r\n    \"bank_id\":2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -365,14 +365,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_url}}/api/transactions/4",
+							"raw": "{{local_url}}/api/transactions/2",
 							"host": [
 								"{{local_url}}"
 							],
 							"path": [
 								"api",
 								"transactions",
-								"4"
+								"2"
 							]
 						}
 					},
