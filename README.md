@@ -7,11 +7,10 @@ terminal into your project folder and run these Commands
 2. Run this command in your terminal for getting new .env configuration file 
 **cp .env.example .env**
 3. Now Run **php artisan key:generate**
-4. **composer dump-autoload**
+4. Run this command **composer dump-autoload**
 5. Open localhost/phpmyadmin
 6. Create new Database With any name you want.
-7. Then Run this Command **php artisan migrate**
-8. Now Run this Command **php artisan passport:install --force**
+
 
 ## Setting Project Configurations
 
@@ -24,7 +23,8 @@ file and update your project configuration
 3. Replace **DB_USERNAME** constant with the name of your phpMyAdmin User Name e.g (root).
 4. If your Database is using any password then change **DB_PASSWORD** constant value with
    your database password if your database is not using any password then leave it empty.
-
+7. Then Run this Command in your terminal **php artisan migrate**
+8. And Run this Command **php artisan passport:install --force**
 ## Setting Enviroment for Postman
 
 if you are using **Postman** for testing Api then follow the following steps:
@@ -52,7 +52,6 @@ First you have to register new user if you want to hit banks and transactions AP
 
 1. Register new user with name, email, password, password_confirmation.
 2. The server will return loggedin user data and access_token
-3. Copy the access token that you gets after Registeration.
+3. Copy the access token that you gets after Registeration / Login.
 4. Edit your Enviroment File(Top right eye icon button) and set token initial value and current value with the value you get from server.
-5. By logging in through the API you will get access token as well update the environment file to use other APIs.
-6. Without Authentication or not passing correct access_token you will get error from server **unauthenticated** so make sure that you put the right value in the token variable.
+5. Without Authentication or not passing correct access_token you will get error from server **unauthenticated with status code 401** so make sure that you put the right value in the token variable.

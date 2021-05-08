@@ -21,7 +21,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"sohaib\",\r\n    \"email\":\"sohaib@yahoo.com\",\r\n    \"password\":\"password\",\r\n    \"password_confirmation\":\"password\"\r\n}",
+							"raw": "{\r\n    \"name\":\"sohaib\",\r\n    \"email\":\"sohaib3@yahoo.com\",\r\n    \"password\":\"password\",\r\n    \"password_confirmation\":\"password\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -29,14 +29,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_url}}/api/user/resgiter",
+							"raw": "{{local_url}}/api/user/register",
 							"host": [
 								"{{local_url}}"
 							],
 							"path": [
 								"api",
 								"user",
-								"resgiter"
+								"register"
 							]
 						}
 					},
@@ -99,7 +99,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"PSL\"\r\n}",
+							"raw": "{\r\n    \"name\":\"J\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -137,7 +137,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"PCB\"\r\n}",
+							"raw": "{\r\n    \"name\":\"JS\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -145,14 +145,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_url}}/api/banks/1",
+							"raw": "{{local_url}}/api/banks/2",
 							"host": [
 								"{{local_url}}"
 							],
 							"path": [
 								"api",
 								"banks",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -184,14 +184,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_url}}/api/banks/2",
+							"raw": "{{local_url}}/api/banks/1",
 							"host": [
 								"{{local_url}}"
 							],
 							"path": [
 								"api",
 								"banks",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -326,14 +326,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_url}}/api/transactions/2",
+							"raw": "{{local_url}}/api/transactions/3",
 							"host": [
 								"{{local_url}}"
 							],
 							"path": [
 								"api",
 								"transactions",
-								"2"
+								"3"
 							]
 						}
 					},
@@ -365,14 +365,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_url}}/api/transactions/2",
+							"raw": "{{local_url}}/api/transactions/4",
 							"host": [
 								"{{local_url}}"
 							],
 							"path": [
 								"api",
 								"transactions",
-								"2"
+								"4"
 							]
 						}
 					},
