@@ -21,6 +21,7 @@ then URL might be **http://localhost/project_name** if you are using laragon the
 3. Replace **DB_USERNAME** constant with the name of your Database User Name e.g (root)
 4. If you Database is using any password then change **DB_PASSWORD** constant value with
 your database password if your database is not using any password then leave it empty.
+5. Then Run this Command **php artisan migrate**
 
 ## Setting Enviroment for Postman
 if you are using **Postman** for testing Api then follow the following steps:
