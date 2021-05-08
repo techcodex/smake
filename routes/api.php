@@ -24,16 +24,16 @@ Route::post('/user/login','Api\UserAuthController@login')->name('api.login');
 
 Route::middleware('auth:api-user')->group(function() {
     //Banks Routes
-    Route::get('/banks','Api\BanksController@index');
-    Route::post('/banks','Api\BanksController@store');
-    Route::put('/banks/{id}','Api\BanksController@update')->where('id','[0-9]+');
-    Route::delete('banks/{id}','Api\BanksController@destroy')->where('id','[0-9]+');
-    Route::get('/banks/get_transaction_sum/{id}','Api\BanksController@getTransactionSum')->where('id','[0-9]+');
+    Route::get('/banks','Api\BanksController@index')->name('api.bank.index');
+    Route::post('/banks','Api\BanksController@store')->name('api.bank.store');
+    Route::put('/banks/{id}','Api\BanksController@update')->name('api.bank.update')->where('id','[0-9]+');
+    Route::delete('banks/{id}','Api\BanksController@destroy')->name('api.bank.delete')->where('id','[0-9]+');
+    Route::get('/banks/get_transaction_sum/{id}','Api\BanksController@getTransactionSum')->name('api.bank.getTransactionTotal')->where('id','[0-9]+');
 
     //transactions Routes
-    Route::get('/transactions','Api\TransactionsController@index');
-    Route::post('/transactions','Api\TransactionsController@store');
-    Route::delete('/transactions/{id}','Api\TransactionsController@destroy')->where('id','[0-9]+');
-    Route::put('/transactions/{id}','Api\TransactionsController@update')->where('id','[0-9]+');
+    Route::get('/transactions','Api\TransactionsController@index')->name('api.transaction.index');
+    Route::post('/transactions','Api\TransactionsController@store')->name('api.transaction.store');
+    Route::delete('/transactions/{id}','Api\TransactionsController@destroy')->name('api.transaction.delete')->where('id','[0-9]+');
+    Route::put('/transactions/{id}','Api\TransactionsController@update')->name('api.transaction.update')->where('id','[0-9]+');
 
 });
