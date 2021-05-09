@@ -1,6 +1,6 @@
 # Setting Up Project
 
-* git clone https://github.com/techcodex/smake.git
+- git clone https://github.com/techcodex/smake.git
 
 After Cloning the project into your local machine go to the project folder and open
 terminal into your project folder and run these Commands
