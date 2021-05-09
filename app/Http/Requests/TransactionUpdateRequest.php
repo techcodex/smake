@@ -24,8 +24,8 @@ class TransactionUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'bank_id' => 'numeric|min:1',
-            'amount' => 'numeric|min:1',
+            'bank_id' => 'required|numeric|min:1',
+            'amount' => 'required|numeric|min:1',
             'date' => 'required'
         ];
     }
